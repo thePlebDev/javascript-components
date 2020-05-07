@@ -1,0 +1,126 @@
+body{
+  margin:0;
+  font-family: 'Roboto', sans-serif;
+}
+.tab{
+  overflow: hidden;
+  border:1px solid #ccc;
+  background-color:#f1f1f1;
+}
+.London{
+  display: block;
+}
+
+.tab button{
+  background-color: inherit;
+  float: left;
+  border:none;
+  outline:none;
+  cursor: pointer;
+  padding:14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover{
+  background-color: #ddd;
+}
+
+.tab button.active{
+  background-color: #ddd;
+}
+
+.tabcontent{
+  display: none;
+  padding:6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+
+
+  animation:  fadeEffect 1s
+}
+
+@keyframes fadeEffect {
+  from {opacity: 0;}
+  to {opacity: 1;}
+
+}
+
+img{
+  float: right;
+  width: 160px;
+  height: 100%;
+  border-radius: 5px;
+  position: center;
+
+}
+
+.tabcontent-container{
+  display: grid;
+  grid-template-columns: 40% 40%;
+  padding: 10px;
+
+}
+.info{
+  margin-left: 5px;
+}
+h4{
+  display: inline-block;
+  font-size: 14px;
+  letter-spacing: 0.1px;
+}
+.review-one h3::before{
+  content: open-quote;
+  font-size: 2em;
+  color: #ffc021;
+
+}
+
+.review-one h3::after{
+  content: close-quote;
+  font-size: 2em;
+  color: #8121ff
+
+}
+
+
+.review-two h3::before{
+  content: open-quote;
+  font-size: 2em;
+  color: #ff7023;
+
+}
+
+.review-two h3::after{
+  content: close-quote;
+  font-size: 2em;
+  color: #23aeff
+
+}
+
+.review-three h3::before{
+  content: open-quote;
+  font-size: 2em;
+  color: #ff1289;
+
+}
+
+.review-three h3::after{
+  content: close-quote;
+  font-size: 2em;
+  color: #85ff12;
+
+}
+
+
+
+
+
+
+.pipe{
+  font-weight: bold;
+  font-size: 20px;
+}
+.title{
+  font-weight: lighter;
+}

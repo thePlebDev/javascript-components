@@ -1,0 +1,32 @@
+- this time I will be creating a tabbed window design
+
+- so float: left makes elements get really close to eachother
+
+- ok so lets do some reading on transitions in css. CSS transitions allow me to change property values smoothly, over a given duration. there is
+a lot more you can do with it like that I will have to explore later
+
+
+- so for the start we have the display set to none, that Is why nothing is showing when the page loads
+- when the button is clicked we run the function with two varibles that are strings the first string is always 'event' the second on is
+dependent on the location
+
+- so when we click the london tab the onClick function is going to be run with the varibles of event and London
+-we then loop through all the content and set the display to none. we get all the buttons and replace all the active classes with ''. but initialy
+there will be no class with the handle of active
+
+
+- so what happens when the page first loads every display is set to none, so nothing shows except for the buttons, when a button is clicked
+the function openCity is called with the value of event and the value of event and the city if we click London then that value will be London
+it will then loop through and set all displays to none, on the first call this will be useless. when something is set to display none, other
+elements will act as if that element doesn't exist and adjust accordingly. we then loop through all the buttons and change all the active
+classes to '', on the first call this will do nothing. The last thing that we do is set the current text to display block, we then also
+add the active class
+
+- so right now I should read up on some animation.
+
+
+ANIMATION:
+- css animations gradually lets an element change over time.
+- when you specify CSS styles inside the @keyframes rule, the animation will gradually change from the current style to the new style at
+certain times and then to get that animation to work you msut bind it
+so on the element in css you specify the animation duration and then you  define the animation in the @keyframes 
